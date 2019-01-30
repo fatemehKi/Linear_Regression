@@ -16,3 +16,8 @@ regressor = lm(formula = Salary ~ YearsExperience,
                data = training_set)
 #Predicting the test set result
 y_pred = predict(regressor, newdata = test_set)
+
+#Visualising the traing set results
+#install.packages('ggplot2')
+library(ggplot2)
+
