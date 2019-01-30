@@ -38,3 +38,7 @@ plt.plot(X_train, regressor.predict(X_train), color = 'pink')
 plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
+
+
+# Visualising the Training set results
+plt.scatter(X_test, y_test, color = 'green')
