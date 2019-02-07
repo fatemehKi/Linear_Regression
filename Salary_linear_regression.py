@@ -55,7 +55,11 @@ plt.show()
 
 #Visualizing the Polynomial Regression Result for comparison with poly
 # the prediction is done on X_poly
+#addin the resolution to plot
+#X_grid = np.arange(min(X), max(X), 0.1)
+#X_grid = X_grid.reshape((len(X_grid),1))
 plt.scatter(X, y, color = 'red')
+# the prediction is done on X_poly
 plt.plot(X, Lin_reg_2.predict(X_poly), color = 'blue')
 plt.title('Truth or Bluff (Linear Regression)')
 plt.xlabel('level')
